@@ -18,10 +18,13 @@ function BeetleStateFree(){
 	BeetleAnimateSprite();
 	
 	// Change State (at the end of the frame)
-	if(key_hold){
-		// TODO: CHANGE GAMERMODE TO ACTUALLY PICKING UP / THROWING / DROPPING BREAD
+	if(key_speed){
 		state = BeetleGamerMode;
 		move_distance_remaining = distance_gamer;
+	}
+	
+	if(key_hold){
+		state = BeetleHoldMode; 
 	}
 	
 }

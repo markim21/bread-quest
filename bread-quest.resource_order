@@ -18,6 +18,7 @@
   ],
   "ResourceOrderSettings": [
     {"name":"BeetleStateFree","order":3,"path":"scripts/BeetleStateFree/BeetleStateFree.yy",},
+    {"name":"BeetleHoldMode","order":5,"path":"scripts/BeetleHoldMode/BeetleHoldMode.yy",},
     {"name":"sBeetleGamerMode","order":3,"path":"sprites/sBeetleGamerMode/sBeetleGamerMode.yy",},
     {"name":"sCollision","order":2,"path":"sprites/sCollision/sCollision.yy",},
     {"name":"sBeetleRun","order":1,"path":"sprites/sBeetleRun/sBeetleRun.yy",},

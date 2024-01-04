@@ -13,3 +13,5 @@ sprite_gamer = sBeetleGamerMode;
 sprite_run = sBeetleRun;
 sprite_idle = sBeetle;
 local_frame = 0;
+
+held_object = none; 

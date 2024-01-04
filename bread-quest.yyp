@@ -37,6 +37,7 @@
     {"id":{"name":"BeetleStateFree","path":"scripts/BeetleStateFree/BeetleStateFree.yy",},},
     {"id":{"name":"oBeetle","path":"objects/oBeetle/oBeetle.yy",},},
     {"id":{"name":"BeetleAnimateSprite","path":"scripts/BeetleAnimateSprite/BeetleAnimateSprite.yy",},},
+    {"id":{"name":"BeetleHoldMode","path":"scripts/BeetleHoldMode/BeetleHoldMode.yy",},},
     {"id":{"name":"sBeetleGamerMode","path":"sprites/sBeetleGamerMode/sBeetleGamerMode.yy",},},
     {"id":{"name":"sCollision","path":"sprites/sCollision/sCollision.yy",},},
     {"id":{"name":"sBeetleRun","path":"sprites/sBeetleRun/sBeetleRun.yy",},},
