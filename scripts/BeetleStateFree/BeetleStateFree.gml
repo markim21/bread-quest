@@ -7,8 +7,8 @@ function BeetleStateFree(){
 
 	// Update Sprite Index
 	var _oldSprite = sprite_index;
-	if (input_magnitude != 0) {	// when we are moving,
-		direction = input_direction; // input direction is changing every frame. built in var automatically wraps angle, too
+	if (input_magnitude != 0) {
+		direction = input_direction;
 		sprite_index = sprite_run;
 	} else sprite_index = sprite_idle;
 
