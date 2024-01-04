@@ -10,4 +10,4 @@ key_hold = keyboard_check_pressed(ord("Z"));
 input_direction = point_direction(0,0,key_right-key_left, key_down-key_up);
 input_magnitude = (key_right - key_left != 0) || (key_down - key_up != 0);
 
-script_execute(state); // for script_execute: also include args here if needed
+if (!global.game_paused) script_execute(state); // for script_execute: also include args here if needed
