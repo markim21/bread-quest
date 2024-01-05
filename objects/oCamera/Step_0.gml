@@ -5,8 +5,8 @@ if(instance_exists(follow)) {
 	x_to = follow.x;
 	y_to = follow.y; 
 }
-x += (x_to - x) / 15;
-y += (y_to - y) / 15; 
+x += (x_to - x);
+y += (y_to - y); 
 
 // Keep camera center inside room
 x = clamp(x, view_width_half, room_width - view_width_half);

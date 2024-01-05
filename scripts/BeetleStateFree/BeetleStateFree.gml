@@ -1,7 +1,14 @@
 function BeetleStateFree(){
 	// Movement
-	horizontal_speed = lengthdir_x(input_magnitude * speed_walk, input_direction);
-	vertical_speed = lengthdir_y(input_magnitude * speed_walk, input_direction);
+	if (holding_state == "holding" || holding_state == false) { 
+		
+		if (speed == 0) { 
+			image_speed = 0;
+		} else {
+			horizontal_speed = lengthdir_x(input_magnitude * speed_walk, input_direction);
+			vertical_speed = lengthdir_y(input_magnitude * speed_walk, input_direction);
+		}
+	}
 
 	BeetleCollision();
 
@@ -25,6 +32,19 @@ function BeetleStateFree(){
 	
 	if(key_hold){
 		state = BeetleHoldMode; 
+		
+		// check if can throw holding 
+		if (holding_state == "holding") { 
+			state = BeetleThrowMode; 
+		}
+		
+		// check if can pick up pickable
+		var _picked_instance = can_interact_with_object(oBread, true)
+		if (_picked_instance != noone && pickup_pickable(_picked_instance)) {
+			state = BeetleHoldMode;
+		}
+		
+		
 	}
 	
 }

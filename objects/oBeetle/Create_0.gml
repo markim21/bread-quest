@@ -9,9 +9,12 @@ speed_walk = 2.0;
 speed_gamer = 3.0;
 distance_gamer = 52; // this is in px
 
+animation_end_script = -1; 
+
 sprite_gamer = sBeetleGamerMode;
 sprite_run = sBeetleRun;
 sprite_idle = sBeetle;
+
 local_frame = 0;
 
-held_object = none; 
+holding_state = false; // false, "picking, "holding, "throwing
